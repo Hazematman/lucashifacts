@@ -1,9 +1,9 @@
 #!/bin/bash
 
-git clone https://github.com/Caelink/lucashifacts.git tmp_lucashi_pls_no_collide
+TMP_DIR=`mktemp -d lucashifactsi.XXXXXXX` || exit 1
+git clone https://github.com/Caelink/lucashifacts.git $TMP_DIR
 
-cd tmp_lucashi_pls_no_collide
+cd $TMP_DIR
 ./spam_me.sh
 cd -
-rm -rf tmp_lucashi_pls_no_collide
-
+rm -rf $TMP_DIR

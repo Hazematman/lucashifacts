@@ -2,4 +2,4 @@
 
 source ./config.sh
 
-cat $EMAILS | xargs -n 1 $MAIL_SCRIPT
+< $EMAILS xargs -n 1 $MAIL_SCRIPT

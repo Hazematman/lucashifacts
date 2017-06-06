@@ -1,5 +1,8 @@
-hello it is i
-thank you for subscribing to
-lucashi emails
+<html>
+<h1>Hello!</h1>
+<p>it is i<br>
+thank you for subscribing to<br>
+lucashi emails</p>
 
-Did you know that
+<p>Did <em>you</em> know that ${facthtml} </p>
+</html>
